@@ -8,9 +8,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //react uses createRoot() and its method render to render html to webpage
 // this is where react component should be displayed
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>  
     <App/>
-  </React.StrictMode>
+  // </React.StrictMode>
 
   //components should start with upper case
   
