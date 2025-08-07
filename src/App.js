@@ -5,7 +5,6 @@ import './App.css';
 // import Playground from './Playground';
 //const carArray = ['Ford', 'BMW', 'Audi'];
 
-import Heading from "./Heading";
 import InputFieldForm from "./InputFieldForm";
 import Dropdown from "./Dropdown";
 import ButtonForm from "./ButtonForm";
@@ -31,7 +30,6 @@ function App() {
           <Button/>
       </form>
 */}
-     <Heading value={FormValue} />
        {/* <form>  
         <label for={InputName1}> {InputName1} 
           <InputFieldForm id={InputName1} type={InputTypeText} name={InputName1} placeholder={InputMsg1} />

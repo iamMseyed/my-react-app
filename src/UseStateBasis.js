@@ -1,4 +1,5 @@
 import {useState} from "react";
+import Heading from "./Heading";
 
 function countInitial(){
     console.log('Run this!')
@@ -83,6 +84,7 @@ function UseStateBasic(){
     }
     return (
         <>
+            <Heading value='Hooks - useState()'/>
             <button onClick={decrement}> - </button>
             <button> {count} </button>
             <button>{theme}</button>
