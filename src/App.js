@@ -9,6 +9,8 @@ import Heading from "./Heading";
 import InputFieldForm from "./InputFieldForm";
 import Dropdown from "./Dropdown";
 import ButtonForm from "./ButtonForm";
+import FormUseState from './FormUseState';
+import UseStateBasic from './UseStateBasis';
 
 const FormValue = "Form Page",InputName1 = "Username", InputName2= "Password",InputName3="Full Name",
 InputName4="Email", InputMsg1 = "Enter Username", InputMsg2="Enter Password", InputMsg3="Enter Full Name",
@@ -30,7 +32,7 @@ function App() {
       </form>
 */}
      <Heading value={FormValue} />
-      <form>
+       {/* <form>  
         <label for={InputName1}> {InputName1} 
           <InputFieldForm id={InputName1} type={InputTypeText} name={InputName1} placeholder={InputMsg1} />
         </label>
@@ -46,7 +48,10 @@ function App() {
 
         Select Gender <Dropdown value={DropDownValue} />
         <ButtonForm value={buttonValue} />
-      </form>
+      </form>*/}
+
+      {/* <FormUseState/> */}
+      <UseStateBasic/>
     </div>
   );
 }
