@@ -13,13 +13,15 @@ form {
   margin: auto;
 }
 
-input{
-   width: 95%;
+input {
+  width: 95%;
 }
-select,button{
+
+select, button {
   width: 100%;
 }
- input,select, button {
+
+input, select, button {
   display: block;
   margin: 10px 0;
   padding: 10px;
@@ -28,10 +30,48 @@ select,button{
 }
 
 button {
-  background-color: #4CAF50; /* Green background */
-  color: white;              /* White text */
+  background-color: #4CAF50; 
+  color: white;              
   border: none;
   cursor: pointer;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+#create,#cancel,#save {
+  background-color: rgb(11, 113, 215);
+  width: auto;
+}
+
+#save {
+  background-color: #4CAF50;
+}
+
+#cancel, .delete {
+  background-color: #f44336; /* Red color for cancel */
+}
+
+#edit {
+  background-color: rgb(11, 215, 215);
+  color: white; 
+}
+
+#edit:hover {
+  background-color: rgb(50, 234, 234);
+}
+
+#delete {
+  background-color: rgb(233, 8, 8);
+  color: white; 
+}
+
+#delete:hover {
+  background-color: rgb(205, 39, 39);
 }
 
 button:hover {
@@ -45,4 +85,39 @@ select {
 h2 {
   font-family: Arial, sans-serif;
   color: #333;
+}
+
+/* TableStyles.css */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+tr > td {
+  font-size: 11px;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.txtCenter {
+  text-align: center;
 }

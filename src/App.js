@@ -5,17 +5,18 @@ import './App.css';
 // import Playground from './Playground';
 //const carArray = ['Ford', 'BMW', 'Audi'];
 
-import InputFieldForm from "./InputFieldForm";
-import Dropdown from "./Dropdown";
-import ButtonForm from "./ButtonForm";
-import FormUseState from './FormUseState';
-import UseStateBasic from './UseStateBasis';
+// import InputFieldForm from "./InputFieldForm";
+// import Dropdown from "./Dropdown";
+// import ButtonForm from "./ButtonForm";
+// import FormUseState from './FormUseState';
+// import UseStateBasic from './UseStateBasis';
+import UseEffect from './useEffect';
 
-const FormValue = "Form Page",InputName1 = "Username", InputName2= "Password",InputName3="Full Name",
-InputName4="Email", InputMsg1 = "Enter Username", InputMsg2="Enter Password", InputMsg3="Enter Full Name",
-InputMsg4="Enter email", InputTypeText="text",InputTypeMail="email",InputTypePassword="password",
-DropDownValue = ['Male','Female'],
-buttonValue = ['Signup','Signin','Reset'];
+// const FormValue = "Form Page",InputName1 = "Username", InputName2= "Password",InputName3="Full Name",
+// InputName4="Email", InputMsg1 = "Enter Username", InputMsg2="Enter Password", InputMsg3="Enter Full Name",
+// InputMsg4="Enter email", InputTypeText="text",InputTypeMail="email",InputTypePassword="password",
+// DropDownValue = ['Male','Female'],
+// buttonValue = ['Signup','Signin','Reset'];
 
 function App() {
   return (
@@ -49,7 +50,8 @@ function App() {
       </form>*/}
 
       {/* <FormUseState/> */}
-      <UseStateBasic/>
+      {/* <UseStateBasic/> */}
+      <UseEffect/>
     </div>
   );
 }
