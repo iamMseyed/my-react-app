@@ -14,7 +14,7 @@ const UseEffect = () => {
     priority: "",
     status: "",
     tags: [],
-  });
+  }); 
   const [isEditing, setIsEditing] = useState(false);
   const [editId, setEditId] = useState(null);
 
