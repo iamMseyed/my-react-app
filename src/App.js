@@ -10,14 +10,23 @@ import './App.css';
 // import ButtonForm from "./ButtonForm";
 // import FormUseState from './FormUseState';
 // import UseStateBasic from './UseStateBasis';
-import UseEffectFetchData from './UseEffectFetchData';
-import UseEffectBasics from './UseEffectBasics';
+// import UseEffectFetchData from './UseEffectFetchData';
+// import UseEffectBasics from './UseEffectBasics';
+// SetThemePart,UseContextExample
+
+// import { SetThemePart, UseContextExample } from './UseContextExample';
+
 
 // const FormValue = "Form Page",InputName1 = "Username", InputName2= "Password",InputName3="Full Name",
 // InputName4="Email", InputMsg1 = "Enter Username", InputMsg2="Enter Password", InputMsg3="Enter Full Name",
 // InputMsg4="Enter email", InputTypeText="text",InputTypeMail="email",InputTypePassword="password",
 // DropDownValue = ['Male','Female'],
 // buttonValue = ['Signup','Signin','Reset'];
+
+
+import UseContextWith from './UseContextWith';
+
+import UseContextWithout from './UseContextWithout';
 
 function App() {
   return (
@@ -50,10 +59,18 @@ function App() {
         <ButtonForm value={buttonValue} />
       </form>*/}
 
-      {/* <FormUseState/> */}
-      {/* <UseStateBasic/> */}
-      <UseEffectBasics/>
-      <UseEffectFetchData/>
+      {/* <FormUseState/> 
+       <UseStateBasic/> 
+       <UseEffectBasics/>
+      <UseEffectFetchData/> */}
+
+      {/* single */}
+       {/* <SetThemePart/>
+       <UseContextExample/> */}
+    
+       <UseContextWithout/>
+        <UseContextWith/>
+
     </div>
   );
 }
