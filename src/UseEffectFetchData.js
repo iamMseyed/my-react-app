@@ -41,7 +41,7 @@ const UseEffectFetchData = () => {
 
   useEffect(() => {
     fetchData();
-  }, [loading]);
+  }, [data,showInputFieldAPIs]);
 
   // when alterring the field this will be called
 

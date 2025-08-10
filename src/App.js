@@ -10,7 +10,7 @@ import './App.css';
 // import ButtonForm from "./ButtonForm";
 // import FormUseState from './FormUseState';
 // import UseStateBasic from './UseStateBasis';
-// import UseEffectFetchData from './UseEffectFetchData';
+import UseEffectFetchData from './UseEffectFetchData';
 import UseEffectBasics from './UseEffectBasics';
 
 // const FormValue = "Form Page",InputName1 = "Username", InputName2= "Password",InputName3="Full Name",
@@ -52,8 +52,8 @@ function App() {
 
       {/* <FormUseState/> */}
       {/* <UseStateBasic/> */}
-      {/* <UseEffectFetchData/> */}
       <UseEffectBasics/>
+      <UseEffectFetchData/>
     </div>
   );
 }
