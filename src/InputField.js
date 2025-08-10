@@ -14,7 +14,7 @@
 // }
 // export default InputField;
 
-
+/*
 function InputField (props){
 const test = props.valid;
 // console.log(test);
@@ -44,7 +44,22 @@ return(
             </>
         );
         }   
-    */
+
 }
+*/
+
+
+function InputField({ test, placeholder, name, value, onChange }) {
+    return (
+        <input
+            type={test === "true" ? 'text' : 'password'}
+            placeholder={placeholder}
+            name={name}
+            value={value}
+            onChange={onChange} 
+        />
+    );
+}
+
 
 export default InputField;

@@ -1,6 +1,6 @@
 import './App.css';
 // import Button from './Button'
-// import InputField from './InputField';
+import InputField from './InputField';
 // import SimpleArray from './SimpleArray';
 // import Playground from './Playground';
 //const carArray = ['Ford', 'BMW', 'Audi'];
@@ -21,12 +21,15 @@ import './App.css';
 // InputName4="Email", InputMsg1 = "Enter Username", InputMsg2="Enter Password", InputMsg3="Enter Full Name",
 // InputMsg4="Enter email", InputTypeText="text",InputTypeMail="email",InputTypePassword="password",
 // DropDownValue = ['Male','Female'],
-// buttonValue = ['Signup','Signin','Reset'];
+//buttonValue = ['Signup','Signin','Reset'];
 
-
+/*
 import UseContextWith from './UseContextWith';
 
 import UseContextWithout from './UseContextWithout';
+
+*/
+import LoginComponent from './LoginComponent';
 
 function App() {
   return (
@@ -67,9 +70,11 @@ function App() {
       {/* single */}
        {/* <SetThemePart/>
        <UseContextExample/> */}
-    
-       <UseContextWithout/>
-        <UseContextWith/>
+    {/* 
+      <UseContextWithout/>
+      <UseContextWith/>
+       */}
+       <LoginComponent/>
 
     </div>
   );
