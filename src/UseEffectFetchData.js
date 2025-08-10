@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import InputFieldAPI from "./InputFieldAPI"; // Import the InputFieldAPI component
 import "./App.css";
 
-const UseEffect = () => {
+const UseEffectFetchData = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -44,7 +44,6 @@ const UseEffect = () => {
   }, [loading]);
 
   // when alterring the field this will be called
-  
 
   const handleAddRow = () => {
     setShowInputFieldAPIs(true);
@@ -283,4 +282,4 @@ const UseEffect = () => {
   );
 };
 
-export default UseEffect;
+export default UseEffectFetchData;
