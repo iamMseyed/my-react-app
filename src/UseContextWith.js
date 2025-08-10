@@ -1,31 +1,37 @@
 // with useContext()
-import{useState,createContext,useContext} from "react"; // for useContext, useState is too used
+import{useState,createContext,useContext} from "react"; 
+
+// create context
 const ThemeContext = createContext();
+
+// create provider component
 function UseContextWith(){
     const[theme, setTheme] = useState('dark');
-
     return (
-        <ThemeContext.Provider value ={{theme, setTheme}}>
+        <>
             <hr/>
-            <h1>
-                With UseContext()
-            </h1>
-            <Layout1/>
-        </ThemeContext.Provider>
+                <h1>
+                    With UseContext()
+                </h1>
+            <ThemeContext.Provider value ={{theme, setTheme}}>     
+                <Layout/>
+            </ThemeContext.Provider>
+        </>
+
     );
 }
 
-function Layout1(){
+function Layout(){
     return (
         <div>
-            <Header1/>
-            <Sidebar1/>
-            <MainContext1/>
+            <Header/>
+            <Sidebar/>
+            <MainComponent/>
         </div>
     );
 }
 
-function Header1(){
+function Header(){
     const {theme} = useContext(ThemeContext);
     return (
         <header
@@ -40,7 +46,7 @@ function Header1(){
     );
 }
 
-function Sidebar1(){
+function Sidebar(){
     const {theme, setTheme}= useContext(ThemeContext);
      return (
         <button onClick={ ()=>
@@ -52,7 +58,7 @@ function Sidebar1(){
     )
 }
 
-function MainContext1(){
+function MainComponent(){
     const {theme} = useContext(ThemeContext);
      return (
         <main

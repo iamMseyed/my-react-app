@@ -1,10 +1,11 @@
 // without usecontext()
 
 import {useState } from "react"; 
+
 function UseContextWithout(){
     const [theme,setTheme] = useState('light');
-    return (
-        <Layout theme={theme} setTheme={setTheme}/>
+    return ( 
+        <Layout theme={theme} setTheme={setTheme}/> //pass prop even if they don't use theme
     );
 }
 
@@ -13,7 +14,7 @@ function Layout( {theme, setTheme} ){
         <>
             <Header theme={theme}/>
             <Sidebar theme = {theme} setTheme={setTheme}/>
-            <MainContext theme = {theme}/>
+            <MainComponent theme = {theme}/>
         </>
      );
 }
@@ -25,7 +26,7 @@ function Header({theme}){
         <hr/>
         <header>
             <h2>Header - Current theme : {theme}</h2>
-            <p>No need to change theme for instance, still need to pass here</p>
+            <p>No need to change theme for instance, stil need to pass here</p>
         </header>
         </>
     );
@@ -42,7 +43,7 @@ function Sidebar({theme, setTheme}){
     )
 }
 
-function MainContext({theme}){
+function MainComponent({theme}){
     return (
         <main
          style={
