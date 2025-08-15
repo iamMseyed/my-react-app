@@ -13,7 +13,7 @@ const users =[
     {username:'un5',kunz:'pas5'}
 ];
 
- function LoginController(){
+ function AccessController(){
     const[authUser,setAuthUser] = useState(null);
     const[email,setEmail]=useState("");
 
@@ -24,4 +24,4 @@ const users =[
     )
 }
 
-export {LoginController,UserContext};
+export {AccessController,UserContext};

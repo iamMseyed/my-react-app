@@ -1,5 +1,5 @@
+import { AccessController } from './AccessController';
 import './App.css';
-import { LoginController } from './LoginController';
 // import Button from './Button'
 // import InputField from './InputField';
 // import SimpleArray from './SimpleArray';
@@ -77,7 +77,7 @@ function App() {
       {/* <LoginComponent/> */}
 
       {/* <UseContextPractical/> */}
-      <LoginController/>
+      <AccessController/>
     </div>
   );
 }

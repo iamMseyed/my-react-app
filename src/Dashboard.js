@@ -1,6 +1,6 @@
 // Dashboard.js
 import { useContext } from 'react';
-import { UserContext } from './LoginController';
+import { UserContext } from './AccessController';
 
 function Dashboard() {
     const { authUser,setAuthUser,email,setEmail } = useContext(UserContext);
@@ -14,12 +14,12 @@ function Dashboard() {
     }
 
     return (
-        <>
+        <form>
             <h2>Dashboard</h2>
             <p>Username: {authUser.username}</p>
             <p>Email: {email}</p>
             <button onClick={handleLogout}>Logout</button>
-        </>
+        </form>
     );
 }
 
