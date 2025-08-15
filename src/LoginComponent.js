@@ -1,4 +1,4 @@
-import React, { useContext, useState, createContext } from "react";
+import { useContext, useState, createContext } from "react";
 import InputField from "./InputField";
 
 const LoginDetailsContext = createContext();
@@ -11,7 +11,7 @@ function LoginComponent() {
 
     return (
         <LoginDetailsContext.Provider value={{ details, setDetails }}>
-            <Layout />
+            <Layout/>
         </LoginDetailsContext.Provider>
     );
 }

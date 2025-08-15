@@ -1,6 +1,6 @@
 import './App.css';
 // import Button from './Button'
-import InputField from './InputField';
+// import InputField from './InputField';
 // import SimpleArray from './SimpleArray';
 // import Playground from './Playground';
 //const carArray = ['Ford', 'BMW', 'Audi'];
@@ -22,14 +22,13 @@ import InputField from './InputField';
 // InputMsg4="Enter email", InputTypeText="text",InputTypeMail="email",InputTypePassword="password",
 // DropDownValue = ['Male','Female'],
 //buttonValue = ['Signup','Signin','Reset'];
-
 /*
 import UseContextWith from './UseContextWith';
-
 import UseContextWithout from './UseContextWithout';
-
 */
-import LoginComponent from './LoginComponent';
+// import LoginComponent from './LoginComponent';
+
+import UseContextPractical from './UseContextPractical';
 
 function App() {
   return (
@@ -72,10 +71,11 @@ function App() {
        <UseContextExample/> */}
     {/* 
       <UseContextWithout/>
-      <UseContextWith/>
-       */}
-       <LoginComponent/>
+      <UseContextWith/> */}
+       
+      {/* <LoginComponent/> */}
 
+      <UseContextPractical/>
     </div>
   );
 }

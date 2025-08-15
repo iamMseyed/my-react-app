@@ -49,14 +49,16 @@ return(
 */
 
 
-function InputField({ test, placeholder, name, value, onChange }) {
+function InputField({ type, placeholder, name, value, onChange }) {
     return (
         <input
-            type={test === "true" ? 'text' : 'password'}
+            type={type}
             placeholder={placeholder}
             name={name}
             value={value}
+            required
             onChange={onChange} 
+           
         />
     );
 }
