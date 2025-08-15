@@ -1,4 +1,5 @@
 import './App.css';
+import { LoginController } from './LoginController';
 // import Button from './Button'
 // import InputField from './InputField';
 // import SimpleArray from './SimpleArray';
@@ -28,7 +29,7 @@ import UseContextWithout from './UseContextWithout';
 */
 // import LoginComponent from './LoginComponent';
 
-import UseContextPractical from './UseContextPractical';
+// import UseContextPractical from './UseContextPractical';
 
 function App() {
   return (
@@ -75,7 +76,8 @@ function App() {
        
       {/* <LoginComponent/> */}
 
-      <UseContextPractical/>
+      {/* <UseContextPractical/> */}
+      <LoginController/>
     </div>
   );
 }
