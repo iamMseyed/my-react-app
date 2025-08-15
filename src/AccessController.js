@@ -1,7 +1,7 @@
 import { useState,createContext } from "react";
 
-import Login from "./Login";
-import Dashboard from "./Dashboard";
+import Login from "./Login"; // share context to this
+import Dashboard from "./Dashboard"; // and this
 
 const UserContext = createContext();
 
@@ -14,11 +14,13 @@ const users =[
 ];
 
  function AccessController(){
-    const[authUser,setAuthUser] = useState(null);
-    const[email,setEmail]=useState("");
+    const[authUser,setAuthUser] = useState(null); // set authUser as null initially
+    const[email,setEmail]=useState(""); // set email as empty
+    const[error, setError] = useState("");
 
     return (
-        <UserContext.Provider value={{authUser,setAuthUser,users,email,setEmail}}>
+        //share the details with the components below and store in context
+        <UserContext.Provider value={{authUser,setAuthUser,users,email,setEmail,error,setError}}>  
             {authUser?<Dashboard/>:<Login/>}
         </UserContext.Provider>
     )
