@@ -25,7 +25,7 @@ function UseRefExplained(){
             <div>Text entered is: {value}</div>
             <i>(this page rendered {y.current} times)</i>
             {/* <i>(this page rendered {renderCount.current} times)</i> */}
-             <i>You are typing this {value} and before it was {prevVal.current}</i>
+             <i>You are typing this "{value}" and before it was "{prevVal.current}"</i>
         </form>
     )
 }
