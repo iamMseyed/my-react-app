@@ -1,5 +1,6 @@
 import './App.css';
-import UseReducer from './UseReducer';
+import UseRef from './UseRef';
+// import UseReducer from './UseReducer';
 // import UseEffectCases from './UseEffectCases';
 // import UseRefExplained from './UseRefExplained';
 // import UseStateElaborated from './UseStateElaborated';
@@ -85,7 +86,8 @@ function App() {
      {/* <UseRefExplained/> */}
      {/* <UseStateElaborated/> */}
      {/* <UseEffectCases/> */}
-     <UseReducer/>
+     {/* <UseReducer/> */}
+     <UseRef/>
     </div>
   );
 }
