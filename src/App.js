@@ -1,5 +1,6 @@
 import './App.css';
-import UseCallbackParent_1 from './UseCallbackParent_1';
+import UseMemo_Counter from './UseMemo_Counter';
+// import UseCallbackParent_1 from './UseCallbackParent_1';
 // import UseCallback from './UseCallback';
 // import UseMemo from './UseMemo';
 // import UseRef from './UseRef';
@@ -94,7 +95,8 @@ function App() {
      {/* <UseCallback/>
      <UseMemo/>
      <UseRef/> */}
-     <UseCallbackParent_1/>
+     {/* <UseCallbackParent_1/> */}
+     <UseMemo_Counter/>
     </div>
   );
 }
