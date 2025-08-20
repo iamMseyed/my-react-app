@@ -1,7 +1,7 @@
  import { useRef,useEffect, useState} from "react";
 
 function UseRef(){
-    const [inputValue, setInputValue] = useState("");
+    // const [inputValue, setInputValue] = useState("");
     const count = useRef(0);
 
     const inputRef = useRef(null)

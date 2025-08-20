@@ -1,6 +1,7 @@
 import './App.css';
-import UseCallback from './UseCallback';
-import UseMemo from './UseMemo';
+import UseCallbackParent_1 from './UseCallbackParent_1';
+// import UseCallback from './UseCallback';
+// import UseMemo from './UseMemo';
 // import UseRef from './UseRef';
 // import UseReducer from './UseReducer';
 // import UseEffectCases from './UseEffectCases';
@@ -90,8 +91,10 @@ function App() {
      {/* <UseEffectCases/> */}
      {/* <UseReducer/> */}
      {/* <UseRef/> */}
-     <UseCallback/>
+     {/* <UseCallback/>
      <UseMemo/>
+     <UseRef/> */}
+     <UseCallbackParent_1/>
     </div>
   );
 }
