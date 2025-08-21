@@ -1,5 +1,6 @@
 import './App.css';
-import UseMemo_Counter from './UseMemo_Counter';
+import DisplayExcel from './Components/ReadExcelFileData/DisplayExcel';
+// import UseMemo_Counter from './UseMemo_Counter';
 // import UseCallbackParent_1 from './UseCallbackParent_1';
 // import UseCallback from './UseCallback';
 // import UseMemo from './UseMemo';
@@ -96,7 +97,8 @@ function App() {
      <UseMemo/>
      <UseRef/> */}
      {/* <UseCallbackParent_1/> */}
-     <UseMemo_Counter/>
+     {/* <UseMemo_Counter/> */}
+     <DisplayExcel/>
     </div>
   );
 }
