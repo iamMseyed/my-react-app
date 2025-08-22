@@ -16,8 +16,12 @@ const DisplayExcel = () => {
 
   return (
     <div>
-      <h1>Excel Data</h1>
+      <br/>
+    <form>
+      <h1>Read excel data</h1>
       <FileInput onFileSelect={handleFileSelect} />
+    </form>
+    <div>
       <table>
         <tbody>
           {excelData.map((row, rowIndex) => (
@@ -29,6 +33,7 @@ const DisplayExcel = () => {
           ))}
         </tbody>
       </table>
+    </div>
     </div>
   );
 };
