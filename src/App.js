@@ -100,7 +100,7 @@ function App() {
      {/* <UseCallbackParent_1/> */}
      {/* <UseMemo_Counter/> */}
      <TakeData/>
-     <DisplayExcel/>
+     {/* <DisplayExcel/> */}
     </div>
   );
 }
