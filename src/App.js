@@ -1,4 +1,5 @@
 import './App.css';
+import MainComponent from './Components/MainComponent';
 // import UseMemo_Counter from './UseMemo_Counter';
 // import UseCallbackParent_1 from './UseCallbackParent_1';
 // import UseCallback from './UseCallback';
@@ -97,6 +98,7 @@ function App() {
      <UseRef/> */}
      {/* <UseCallbackParent_1/> */}
      {/* <UseMemo_Counter/> */}
+     <MainComponent/>
     </div>
   );
 }
