@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { utils, writeFile } from 'xlsx';
 
 const Register = ({ setVisibleComponent }) => {

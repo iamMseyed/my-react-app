@@ -1,7 +1,7 @@
 import  { useState } from 'react';
 import * as XLSX from 'xlsx';
 
-const Login = ({ setVisibleComponent, setSession }) => {
+const Login = ({ setVisibleComponent }) => {
   const [creds, setCreds] = useState({ username: '', password: '' });
   const [error, setError] = useState('');
 
@@ -14,10 +14,7 @@ const Login = ({ setVisibleComponent, setSession }) => {
     e.preventDefault();
 
     try {
-      // Reading Excel file
-      console.warn(1);
       const response = await fetch('/yikya.xlsx'); // Updated filename to match the file created in Register.js
-      console.warn(2);
       const arrayBuffer = await response.arrayBuffer();
       const workbook = XLSX.read(arrayBuffer, { type: "array" });
       const data = XLSX.utils.sheet_to_json(workbook.Sheets[workbook.SheetNames[0]]);
@@ -25,7 +22,6 @@ const Login = ({ setVisibleComponent, setSession }) => {
       // Checking credentials from parsed data
       const user = data.find(user => user.username === creds.username && user.password === creds.password);
       if (user) {
-        setSession(Math.random().toString(36).substring(7)); // Set a random session key
         localStorage.setItem('session', 'true');
         setVisibleComponent('profile');
       } else {
