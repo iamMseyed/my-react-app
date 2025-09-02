@@ -14,7 +14,7 @@ const MainComponent = () => {
   }, [visibleComponent]);
 
   return (
-    <div>
+    <div> 
       {visibleComponent === 'register' && <Register setVisibleComponent={setVisibleComponent} />}
       {visibleComponent === 'login' && <Login setVisibleComponent={setVisibleComponent}/>}
       {visibleComponent === 'profile' && <Profile setVisibleComponent={setVisibleComponent} />}

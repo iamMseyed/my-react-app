@@ -1,5 +1,5 @@
 /* App.css */
-
+/*
 .App {
   text-align: center;
   margin: 20px;
@@ -52,9 +52,6 @@ button {
   background-color: #4CAF50;
 }
 
-#cancel, .delete, #Reset {
-  background-color: #f44336; /* Red color for cancel */
-}
 
 #edit {
   background-color: rgb(11, 215, 215);
@@ -87,7 +84,7 @@ h2 {
   color: #333;
 }
 
-/* TableStyles.css */
+ // TableStyles.csss
 table {
   width: 100%;
   border-collapse: collapse;
@@ -121,3 +118,5 @@ tbody tr:nth-child(even) {
 .txtCenter {
   text-align: center;
 }
+
+*/

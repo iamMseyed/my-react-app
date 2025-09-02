@@ -1,5 +1,5 @@
 import './App.css';
-import MainComponent from './Components/MainComponent';
+import MainComponent from './Components/TailwindType/MainComponent';
 // import UseMemo_Counter from './UseMemo_Counter';
 // import UseCallbackParent_1 from './UseCallbackParent_1';
 // import UseCallback from './UseCallback';

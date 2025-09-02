@@ -13,10 +13,13 @@ const Profile = ({ setVisibleComponent }) => {
       const workbook = XLSX.read(buffer, { type: 'array' });
       const data = XLSX.utils.sheet_to_json(workbook.Sheets[workbook.SheetNames[0]]);
 
+      
+
       const session = localStorage.getItem('session');
       if (session) {
         const user = data[0];
         setUserData(user);
+        console.warn(user);
       }
     };
 

@@ -1,6 +1,8 @@
 import  { useState } from 'react';
 import * as XLSX from 'xlsx';
 
+
+
 const Login = ({ setVisibleComponent }) => {
   const [creds, setCreds] = useState({ username: '', password: '' });
   const [error, setError] = useState('');
@@ -19,11 +21,16 @@ const Login = ({ setVisibleComponent }) => {
       const workbook = XLSX.read(arrayBuffer, { type: "array" });
       const data = XLSX.utils.sheet_to_json(workbook.Sheets[workbook.SheetNames[0]]);
 
+      console.warn('lgnAll',data);
       // Checking credentials from parsed data
-      const user = data.find(user => user.username === creds.username && user.password === creds.password);
+      const user = data.find(
+        user => user.username === creds.username && user.password === creds.password
+      );
+      console.warn('part',user);
       if (user) {
         localStorage.setItem('session', 'true');
         setVisibleComponent('profile');
+
       } else {
         setError('Invalid credentials');
       }
