@@ -58,7 +58,7 @@ const Profile = ({ setVisibleComponent }) => {
         style={{ width: "150px", height: "150px"}}
       />
       <button onClick={handleDownload} className="bg-blue-500 text-white px-4 py-2 rounded">Download as PDF</button>
-      <button onClick={handleLogout} className="bg-red-500 text-white px-4 py-2 rounded mt-4">Logout</button>
+      <button onClick={handleLogout} className="bg-red-500 text-white mx-2 px-4 py-2 rounded mt-4">Logout</button>
     </div>
   );
 };
