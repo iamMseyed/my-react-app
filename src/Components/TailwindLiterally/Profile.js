@@ -1,4 +1,3 @@
-import React from "react";
 import { jsPDF } from "jspdf";
 import autoTable from "jspdf-autotable";
 import { useUser } from "./UserContext";
@@ -55,8 +54,6 @@ const Profile = ({ setVisibleComponent }) => {
         src={`/images/${user.dp}`}
         alt="User Profile"
         className="my-4 width-[150]px height-[150]px"
-        
-        // style={{ width: "150px", height: "150px"}}
       />
       <button onClick={handleDownload} className="bg-blue-500 text-white px-4 py-2 rounded">Download as PDF</button>
       <button onClick={handleLogout} className="bg-red-500 text-white mx-2 px-4 py-2 rounded mt-4">Logout</button>

@@ -42,7 +42,7 @@ const Login = ({ setVisibleComponent }) => {
         }
       }
 
-      setError("Invalid credentials");
+      setError("Invalid credentials!");
     } catch (err) {
       console.error(err);
       setError("Error processing the Excel file");
@@ -50,9 +50,13 @@ const Login = ({ setVisibleComponent }) => {
   };
 
   return (
-    <div className="container">
-      <div className=" bg-white p-8 rounded shadow-md w-full max-w-md">
-          <h2 className="text-2xl font-bold mb-4">Login</h2>
+    <div className="container h-screen flex items-center space-x-4 p-4 bg-[length:100%_100%]" 
+     style={{backgroundImage:'url(/images/bg.jpg)'}} >
+         
+        <div className="w-1/2 flex ">
+          <div className=" w-2/3 ml-5 p-6 rounded-lg shadow-lg" style={{background: "linear-gradient(135deg, #A5C7FE, #E68BBF)"}}>
+          <h2 className="text-4xl pb-10 font-bold text-center">Login</h2>
+          {error && <p className="text-center">{error}</p>}
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -60,7 +64,7 @@ const Login = ({ setVisibleComponent }) => {
           placeholder="Username"
           onChange={handleChange}
           required
-          className="block w-full mb-2 p-2 border border-gray-300 rounded"
+          className="mt-1 block w-full px-4 py-2 rounded-lg bg-gray-100 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:outline-none"
         />
         <input
           type="password"
@@ -68,17 +72,25 @@ const Login = ({ setVisibleComponent }) => {
           placeholder="Password"
           onChange={handleChange}
           required
-          className="block w-full mb-2 p-2 border border-gray-300 rounded"
+          className="mt-1 block w-full px-4 py-2 rounded-lg bg-gray-100 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:outline-none"
         />
-        <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">
+        <button type="submit" className="mt-5 bg-gradient-to-r from-blue-500 to-purple-700 hover:from-blue-700 hover:to-purple-900 text-white font-bold py-2 px-4 rounded w-full mb-4">
           Login
         </button>
       </form>
-      {error && <p className="mt-4 text-red-500">{error}</p>}
-      <button onClick={() => setVisibleComponent("register")} className="mt-4 text-blue-500">
+      <button onClick={() => setVisibleComponent("register")} className="bg-gradient-to-r from-green-500 to-teal-700 hover:from-green-700 hover:to-teal-900 text-white font-bold py-2 px-4 rounded w-full mb-2">
         Register
       </button>
-      </div>
+
+      
+          </div>
+        </div> 
+
+        <div className="w-2/3 flex">
+           <div className="ml-3 text-white">
+            <img src="/images/bg2.jpg"/>
+          </div>
+        </div>
     </div>
   );
 };

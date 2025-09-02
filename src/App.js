@@ -1,5 +1,6 @@
 import './App.css';
-import MainComponent from './Components/TailwindType/MainComponent';
+import MainArea from './Components/TailwindLiterally/MainArea'
+// import MainComponent from './Components/TailwindType/MainComponent';
 // import UseMemo_Counter from './UseMemo_Counter';
 // import UseCallbackParent_1 from './UseCallbackParent_1';
 // import UseCallback from './UseCallback';
@@ -98,7 +99,8 @@ function App() {
      <UseRef/> */}
      {/* <UseCallbackParent_1/> */}
      {/* <UseMemo_Counter/> */}
-     <MainComponent/>
+     {/* <MainComponent/> */}
+     <MainArea/>
     </div>
   );
 }
