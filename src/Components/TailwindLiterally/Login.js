@@ -50,13 +50,11 @@ const Login = ({ setVisibleComponent }) => {
   };
 
   return (
-    <div className="container h-screen flex items-center space-x-4 p-4 bg-[length:100%_100%]" 
-     style={{backgroundImage:'url(/images/bg.jpg)'}} >
-         
-        <div className="w-1/2 flex ">
-          <div className=" w-2/3 ml-5 p-6 rounded-lg shadow-lg" style={{background: "linear-gradient(135deg, #A5C7FE, #E68BBF)"}}>
-          <h2 className="text-4xl pb-10 font-bold text-center">Login</h2>
-          {error && <p className="text-center">{error}</p>}
+  <div className="container h-screen flex items-center space-x-4 p-4 bg-[length:100%_100%]" style={{ backgroundImage: 'url(/images/bg.jpg)' }}>
+  <div className="w-1/2 flex justify-center">
+    <div className="w-2/3 ml-5 p-6 rounded-lg shadow-lg" style={{ background: "linear-gradient(135deg, #A5C7FE, #E68BBF)" }}>
+      <h2 className="text-4xl pb-10 font-bold text-center">Login</h2>
+      {error && <p className="text-center">{error}</p>}
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -81,17 +79,24 @@ const Login = ({ setVisibleComponent }) => {
       <button onClick={() => setVisibleComponent("register")} className="bg-gradient-to-r from-green-500 to-teal-700 hover:from-green-700 hover:to-teal-900 text-white font-bold py-2 px-4 rounded w-full mb-2">
         Register
       </button>
-
-      
-          </div>
-        </div> 
-
-        <div className="w-2/3 flex">
-           <div className="ml-3 text-white">
-            <img src="/images/bg2.jpg"/>
-          </div>
-        </div>
     </div>
+  </div>
+  <div className="w-2/3 flex">
+    <div className="ml-3 text-white w-full h-full bg-[length:100%_100%]" 
+      style={{ backgroundImage: 'url(/images/bg2.jpg)' }}
+    >
+      <div
+      style={
+        {
+          'min-height':'400px'
+        }
+      }>
+
+      </div>
+       {/* <img src="/images/bg2.jpg" className=" border-radius shadow rounded h-full"/> */}
+    </div>
+  </div>
+</div>
   );
 };
 

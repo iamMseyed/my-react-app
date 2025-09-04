@@ -41,21 +41,32 @@ const Register = ({ setVisibleComponent }) => {
 
   return (
 
-    <div className="container mx-auto bg-white p-8 rounded shadow-md w-full max-w-md">
-      <h2 className="text-2xl font-bold mb-4">Register</h2>
+<div className="container h-screen flex justify-center items-center bg-cover bg-center" style={{ backgroundImage: 'url(/images/bg2.jpg)' }}>
+  <div className="flex justify-center items-center">
+    <div className="p-10 rounded-lg shadow-lg bg-white max-w-md w-full" style={{ background: "linear-gradient(135deg, #A5C7FE, #E68BBF)" }}>
+      <h2 className="text-4xl pb-3 font-bold text-center text-gray-800">Register</h2>
       <form onSubmit={handleSubmit}>
-        <input type="text" name="username" placeholder="Username" onChange={handleChange} required className="block w-full mb-2 p-2 border border-gray-300 rounded" />
-        <input type="password" name="password" placeholder="Password" onChange={handleChange} required className="block w-full mb-2 p-2 border border-gray-300 rounded" />
-        <input type="text" name="role" placeholder="Role" onChange={handleChange} required className="block w-full mb-2 p-2 border border-gray-300 rounded" />
-        <input type="file" name="dp" onChange={handleFileChange} required className="block w-full mb-2 p-2 border border-gray-300 rounded" />
-        <input name="bio" placeholder="Bio" onChange={handleChange} required className="block w-full mb-2 p-2 border border-gray-300 rounded" />
-        <input type="text" name="skillSet" placeholder="Skill Set" onChange={handleChange} required className="block w-full mb-2 p-2 border border-gray-300 rounded" />
-        <input type="text" name="qualification" placeholder="Qualification" onChange={handleChange} required className="block w-full mb-2 p-2 border border-gray-300 rounded" />
-        <input type="text" name="experience" placeholder="Experience" onChange={handleChange} required className="block w-full mb-2 p-2 border border-gray-300 rounded" />
-        <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">Register</button>
+        <input type="text" name="username" placeholder="Username" onChange={handleChange} required className="mt-2 block w-full px-4 py-1 rounded-lg bg-gray-100 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:outline-none"/>
+        <input type="password" name="password" placeholder="Password" onChange={handleChange} required className="mt-2 block w-full px-4 py-1 rounded-lg bg-gray-100 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:outline-none" />
+        <input type="text" name="role" placeholder="Role" onChange={handleChange} required className="mt-2 block w-full px-4 py-1 rounded-lg bg-gray-100 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:outline-none"  />
+        <input type="file" name="dp" onChange={handleFileChange} required className="mt-2 block w-full px-4 py-1 rounded-lg bg-gray-100 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:outline-none" />
+        <input type='text' name="bio" placeholder="Bio" onChange={handleChange} required className="mt-2 block w-full px-4 py-1 rounded-lg bg-gray-100 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:outline-none" />
+        <input type="text" name="skillSet" placeholder="Skill Set" onChange={handleChange} required className="mt-2 block w-full px-4 py-1 rounded-lg bg-gray-100 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:outline-none" />
+        <input type="text" name="qualification" placeholder="Qualification" onChange={handleChange} required className="mt-2 block w-full px-4 py-1 rounded-lg bg-gray-100 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:outline-none"  />
+        <input type="text" name="experience" placeholder="Experience" onChange={handleChange} required className="mt-2 block w-full px-4 py-1 rounded-lg bg-gray-100 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:outline-none" />
+
+        <div className="flex justify-between mt-5">
+          <button type="submit" className="bg-gradient-to-r bg-blue-500 text-white px-6 py-2 rounded-lg ml-2 hover:from-blue-700 hover:to-blue-900">
+            Register
+          </button>
+          <button onClick={() => setVisibleComponent("login")} className="bg-gradient-to-r from-green-500 to-teal-700 hover:from-green-700 hover:to-teal-900 text-white px-6 py-2 rounded-lg mr-2">
+            Login
+          </button>
+        </div>
       </form>
-      <button onClick={() => setVisibleComponent('login')} className="mt-4 text-blue-500">Login</button>
     </div>
+  </div>
+</div>
   );
 };
 
