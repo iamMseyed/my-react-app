@@ -1,5 +1,6 @@
 import './App.css';
-import MainArea from './Components/TailwindLiterally/MainArea'
+// import MainArea from './Components/TailwindLiterally/MainArea'
+import { PriceCalculator } from './Components/WeightTest/PriceCalculator';
 // import MainComponent from './Components/TailwindType/MainComponent';
 // import UseMemo_Counter from './UseMemo_Counter';
 // import UseCallbackParent_1 from './UseCallbackParent_1';
@@ -100,7 +101,8 @@ function App() {
      {/* <UseCallbackParent_1/> */}
      {/* <UseMemo_Counter/> */}
      {/* <MainComponent/> */}
-     <MainArea/>
+     {/* <MainArea/> */}
+     <PriceCalculator/>
     </div>
   );
 }
